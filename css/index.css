@@ -1,0 +1,66 @@
+@media only screen and (max-width: 768px) {
+    div.back.container {
+        margin-left: 120px;        
+    }
+}
+
+
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
+div.row.adjustment1
+{
+    margin-right: 0px;
+}
+
+div.adjustment2
+{
+    padding: 0px;
+}
+
+h1 span
+{
+    color: red;
+}
+
+div.carousel-caption
+{
+    font-family: cursive;
+}
+
+div.carousel-caption h3, div.carousel-caption p
+{
+    color: white;
+}
+
+input.margin_bottom_10
+{
+    margin-bottom: 10px;
+}
+
+h2.form-signin-heading
+{
+    /*color: cadetblue;*/
+}

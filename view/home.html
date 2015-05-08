@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		
+		<title>iGrader</title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+		<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../css/style2.css" />
+		
+	</head>
+	<body>
+		<div class="adjust_container">
+			<header class="codrops-header">
+				<h1>Home</h1>
+			</header>
+
+			<section class="container">
+				<div class="col-lg-offset-1 col-lg-6 margin_bottom_15">					
+            <select class="form-control" id="dropdownCourse" name="dropdownCourse">
+                <option id="0" value="select">Select Course</option>                        
+            </select>
+        </div>	
+
+        <div class="col-lg-offset-1 col-lg-6">          
+            <select class="form-control" id="dropdownStudent" name="dropdownStudent">
+                <option id="" class="" value="select">Select Student</option>                        
+            </select>
+        </div> 
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Chart Area</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-lg-12">
+                            <div class="col-lg-6">
+                            </div>
+                            <div class="col-lg-offset-4 col-lg-2">
+                                <select class="form-control" id="dropdownPieChart" name="dropdownPeriod">
+                                    <option id="premium_pie_chart" value="premium">Premium</option>
+                                    <option id="commission_pie_chart" value="commission">Commission</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="morris-area-chart1" class="col-lg-6">
+                            <div id="crossSell_pie_chart" style="height: 400px"></div>
+                        </div>
+
+                        <div id="morris-area-chart2" class="col-lg-6">
+                            <div id="niche_premium_pie_chart" style="height: 400px"></div>
+                        </div>
+
+                        <div id="morris-area-chart3" class="col-lg-6">
+                            <div id="niche_commission_pie_chart" style="height: 400px"></div>
+                        </div>
+                        
+                        
+                </div>
+            </div>
+        </div>
+
+
+			</section>
+			<nav id="bt-menu" class="bt-menu">
+				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+				<ul>
+					<li><a href="#"><i class="fa fa-home"></i></a>Home</li>
+					<li><a href="#"><i class="fa fa-pencil"></i></a>Grade</li>
+					<li><a href="#"><i class="fa fa-wrench"></i></a>Setting</li>
+					<li><a href="#"><i class="fa fa-mobile"></i></a>Contact Us</li>					
+				</ul>
+			</nav>
+		</div><!-- /container -->
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>		
+	<script src="../js/classie.js"></script>
+	<script src="../js/borderMenu.js"></script>	
+</html>

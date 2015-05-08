@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/designerHeader.css" />
+				
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="../js/bootstrap.js"></script>		
+    	<script src="../js/flip.js"></script>
+	</head>
+
+	<body>
+    		<div class="row adjustment1">
+        		<div class="col-md-12 adjustment2">
+		            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		                <ol class="carousel-indicators">
+		                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		                </ol>
+		                <div class="carousel-inner">
+		                    <div class="item active">
+		                        <img src="../img/1.jpg" alt="First slide" style="width:100%; height:640px">
+		                        <div class="carousel-caption">
+		                        	<img src="../img/icon2%402x.png" alt="img" style="height:50px">
+		                            <h3>Student Information</h3>
+		                            <p>Find all student information at one place</p>		                            
+		                        </div>
+		                    </div>
+		                    <div class="item">
+		                        <img src="../img/2.jpg" alt="Second slide" style="width:100%; height:640px">
+		                        <div class="carousel-caption">
+		                        	<img src="../img/icon1%402x.png" alt="img" style="height:50px">
+		                            <h3>Anywhere Access</h3>
+		                            <p>Access and grade student on mobile, saves time.</p>                            
+		                        </div>
+		                    </div>
+		                    <div class="item">
+		                        <img src="../img/3.jpg" alt="Third slide" style="width:100%; height:640px">
+		                        <div class="carousel-caption">
+		                        	<img src="../img/icon3%402x.png" alt="img" style="height:50px">
+		                            <h3>Grade</h3>
+		                            <p>Provide setting and grade students easily</p>                            
+		                        </div>
+		                    </div>
+		                </div>
+		                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		                    <span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control"
+		                        href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right">
+		                        </span></a>
+		            </div>
+		            <div class="main-text">
+		                <div class="col-md-12 text-center">		                    
+		                    <div id="logo">
+			                    <ul>
+								 	<li>i</li>
+								 	<li>G</li>
+								 	<li>R</li>
+								 	<li>A</li>
+								 	<li>D</li>
+								 	<li>E</li>
+								 	<li>R</li>							 	
+								</ul>
+							</div>
+
+							<div id="card-2" class="card">						      	
+					          	<div class="login_button">		                    	
+	                    			<span class="front login_effect">Sign in</span>
+								</div>						      	
+						      	
+						          	<div class="back container">
+						                <form class="col-md-offset-4 col-md-5 form-signin">
+						                    <h2 class="form-signin-heading">Please sign in</h2>
+						                    
+						                    <input type="email" id="inputEmail" class="form-control margin_bottom_10" placeholder="Email address" required="" autofocus="">
+						                    
+						                    <input type="password" id="inputPassword" class="form-control margin_bottom_10" placeholder="Password" required="">							                   
+  											<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>  						                    
+						                </form>
+						            </div>
+						      	
+    						</div>
+
+		                    
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		
+		<div id="push">
+		</div>
+
+	</body>
+
+	<script type="text/javascript">
+
+	$(".front").click(function(){
+		 $(".login_button").css("margin-top", "30px");
+	});
+
+    $(function(){      
+      $("#card-2").flip({
+        axis: "x",
+        reverse: true,
+        trigger: "click"
+      });
+    });
+    </script>
+
+</html>
+

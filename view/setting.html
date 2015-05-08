@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		
+		<title>iGrader</title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+		<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../css/style2.css" />
+		<link href="../css/bootstrap-slider.css" rel="stylesheet">
+
+		<style type='text/css'>		
+			#ex1Slider .slider-selection {
+   				background: lightblue;
+  			}  		
+    </style>
+		
+	</head>
+	<body>
+		<div class="adjust_container">
+			<header class="codrops-header">
+				<h1>Settings</h1>
+			</header>
+
+			<section class="container">
+				<div class="col-lg-offset-1 col-lg-6">
+					
+                    <select class="form-control" id="dropdownCourse" name="dropdownCourse">
+                        <option id="0" value="select">Select Course</option>                        
+                    </select>
+                </div>	
+
+                <div class="setting_div col-lg-offset-1 col-lg-6">
+                	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  						<div class="panel panel-default">
+    						<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+      							<h4 class="panel-title">
+        							<a>
+          								Course Total Marks
+        							</a>
+      							</h4>
+    						</div>
+    						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      							<div class="panel-body">      									
+						      		<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Homework</label>
+      									<div class="controls input_topic">
+        									<input id="homework_total" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="500" data-slider-step="1" data-slider-value="14"/>
+      									</div>
+    								</div>	
+    							</div>
+    							<div class="panel-body">				   
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Lab</label>
+      									<div class="controls input_topic">
+        									<input id="lab_total" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="500" data-slider-step="1" data-slider-value="134"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Project</label>
+      									<div class="controls input_topic">
+        									<input id="project_total" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="500" data-slider-step="1" data-slider-value="134"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Presentation</label>
+      									<div class="controls input_topic">
+        									<input id="presentation_total" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="500" data-slider-step="1" data-slider-value="134"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Midterm</label>
+      									<div class="controls input_topic">
+        									<input id="midterm_total" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="500" data-slider-step="1" data-slider-value="134"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Final</label>
+      									<div class="controls input_topic">
+        									<input id="final_total" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="500" data-slider-step="1" data-slider-value="134"/>
+      									</div>
+    								</div>
+      							</div>
+    						</div>
+  						</div>
+  						<div class="panel panel-default">
+    						<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" >
+      							<h4 class="panel-title">
+        							<a>
+          								Scaling Factor
+        							</a>
+      							</h4>
+    						</div>
+    						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      							<div class="panel-body">
+      								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Homework</label>
+      									<div class="controls input_topic">
+        									<input id="homework_scaling" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Lab</label>
+      									<div class="controls input_topic">
+        									<input id="lab_scaling" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Project</label>
+      									<div class="controls input_topic">
+        									<input id="project_scaling" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Presentation</label>
+      									<div class="controls input_topic">
+        									<input id="presentation_scaling" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+    								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Midterm</label>
+      									<div class="controls input_topic">
+        									<input id="midterm_scaling" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+      								<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Final</label>
+      									<div class="controls input_topic">
+        									<input id="final_scaling" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+      									</div>
+    								</div>
+    							</div>
+    							<div class="panel-body">
+        							<div class="col-md-offset-10 col-md-2" style="float:left;">
+        								<button type="button" class="btn btn-success save_button">Save</button>
+        							</div>
+      							</div>
+    						</div>
+  						</div>
+  						<div class="panel panel-default">
+    						<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" >
+      							<h4 class="panel-title">
+        							<a>
+          								Grade Congfiguration
+        							</a>
+      							</h4>
+    						</div>
+    						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      							<div class="panel-body">
+        							<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Grade A</label>
+      									<div class="controls input_topic">        									
+        									<input id="gradeA" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="[90,100]"/>
+      									</div>
+    								</div>
+      							</div>
+      							<div class="panel-body">
+        							<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Grade B</label>
+      									<div class="controls input_topic">        									
+        									<input id="gradeB" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="[80,90]"/>
+      									</div>
+    								</div>
+      							</div>
+      							<div class="panel-body">
+        							<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Grade C</label>
+      									<div class="controls input_topic">        									
+        									<input id="gradeC" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="[70,80]"/>
+      									</div>
+    								</div>
+      							</div>
+      							<div class="panel-body">
+        							<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Grade D</label>
+      									<div class="controls input_topic">        									
+        									<input id="gradeD" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="[60,70]"/>
+      									</div>
+    								</div>
+      							</div>
+      							<div class="panel-body">
+        							<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Grade E</label>
+      									<div class="controls input_topic">        									
+        									<input id="gradeE" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="[50,60]"/>
+      									</div>
+    								</div>
+      							</div>
+      							<div class="panel-body">
+        							<div class="control-group col-ld-12" style="float:left;width:100%;">      
+      									<label class="control-label label_topic">Grade F</label>
+      									<div class="controls input_topic">        									
+        									<input id="gradeF" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="5" data-slider-value="[0,50]"/>
+      									</div>
+    								</div>
+      							</div>
+    						</div>
+  						</div>
+					</div>			
+				</div>
+			</section>
+			<nav id="bt-menu" class="bt-menu">
+				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+				<ul>
+					<li><a href="#"><i class="fa fa-home"></i></a>Home</li>
+					<li><a href="#"><i class="fa fa-pencil"></i></a>Grade</li>
+					<li><a href="#"><i class="fa fa-wrench"></i></a>Setting</li>
+					<li><a href="#"><i class="fa fa-mobile"></i></a>Contact Us</li>					
+				</ul>
+			</nav>
+		</div><!-- /container -->
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>		
+	<script src="../js/classie.js"></script>
+	<script src="../js/borderMenu.js"></script>
+	<script type='text/javascript' src="../js/bootstrap-slider.js"></script>
+	<script type='text/javascript'>
+    	$(document).ready(function() {	
+
+    		var total_value = 0;
+
+			$("#homework_total").slider({
+				tooltip: 'false' //always
+			});	
+			$("#lab_total").slider({
+				tooltip: 'false'
+			});		
+			$("#project_total").slider({
+				tooltip: 'false'
+			});		
+			$("#presentation_total").slider({
+				tooltip: 'false'
+			});		
+			$("#midterm_total").slider({
+				tooltip: 'false'
+			});		
+			$("#final_total").slider({
+				tooltip: 'false'
+			});	
+
+
+
+			$('#homework_scaling').slider({
+				formatter: function(value) {
+					total_value = total_value + value;
+					return value + "%";
+				}
+			});	
+			$('#lab_scaling').slider({
+				formatter: function(value) {
+					total_value = total_value + value;
+					return value + "%";
+				}
+			});	
+			$('#project_scaling').slider({
+				formatter: function(value) {
+					total_value = total_value + value;
+					return value + "%";
+				}
+			});	
+			$('#presentation_scaling').slider({
+				formatter: function(value) {
+					total_value = total_value + value;
+					return value + "%";
+				}
+			});	
+			$('#midterm_scaling').slider({
+				formatter: function(value) {
+					total_value = total_value + value;
+					return value + "%";
+				}
+			});	
+			$('#final_scaling').slider({
+				formatter: function(value) {	
+					total_value = total_value + value;				
+					return value + "%";
+				}
+			});	
+
+
+			$("#gradeA").slider({
+				formatter: function(value) {
+					return value + "%";
+				}
+			});
+			$("#gradeB").slider({
+				formatter: function(value) {
+					return value + "%";
+				}
+			});
+			$("#gradeC").slider({
+				formatter: function(value) {
+					return value + "%";
+				}
+			});
+			$("#gradeD").slider({
+				formatter: function(value) {
+					return value + "%";
+				}
+			});
+			$("#gradeE").slider({
+				formatter: function(value) {
+					return value + "%";
+				}
+			});
+			$("#gradeF").slider({
+				formatter: function(value) {
+
+					return value + "%";
+				}
+			});
+
+			$(".save_button").click(function(){
+				alert(total_value);
+				location.reload();
+			});
+		});
+    </script>
+</html>

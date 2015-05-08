@@ -1,0 +1,111 @@
+#logo ul
+{
+width: 390px;
+margin: 0 auto;
+height: 115px;
+position: relative;
+overflow: hidden;
+}
+#logo ul li
+{
+list-style:none;
+float:left;
+font-size:30px;
+margin-top:18px;
+padding:10px;
+width:40px;
+margin-left:5px;
+color:#fff;
+font-family: cursive;
+}
+#logo ul li:nth-of-type(1)
+{
+top:40px;
+left:10px;
+background: #0b7c9c;
+-webkit-transform: rotate(5deg);
+-moz-transform: rotate(5deg);
+}
+#logo ul li:nth-of-type(2)
+{
+top:40px;
+left:55px;
+background:red;
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+}
+#logo ul li:nth-of-type(3)
+{
+top:40px;
+left:100px;
+background: #35bfe7;
+-webkit-transform: rotate(15deg);
+-moz-transform: rotate(15deg);
+}
+#logo ul li:nth-of-type(4)
+{
+top:40px;
+left:145px;
+background: #6acdea;
+-webkit-transform: rotate(25deg);
+-moz-transform: rotate(25deg);
+}
+#logo ul li:nth-of-type(5)
+{
+top:40px;
+left:190px;
+background: #7ee0fc;
+-webkit-transform: rotate(30deg);
+-moz-transform: rotate(30deg);
+}
+#logo ul li:nth-of-type(6)
+{
+top:50px;
+left:233px;
+background: #45e8fb;
+-webkit-transform: rotate(40deg);
+-moz-transform: rotate(35deg);
+}
+#logo ul li:nth-of-type(7)
+{
+top:55px;
+left:280px;
+background: #8cd4eb;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+}
+
+.login_button
+{
+    margin-top: 90px;
+    margin-left: -150px;
+}
+
+
+.login_button span {    
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px 75px;    
+    text-decoration: none;
+    border: solid 1px #3b7200;
+    background-color: #35BFE7;    
+}
+
+.login_effect {
+    transition: border-radius 1s;
+    -webkit-transition: border-radius 1s;
+    -moz-transition: border-radius 1s;
+    -o-transition: border-radius 1s;
+    -ms-transition: border-radius 1s;
+}
+
+.login_effect:hover {
+    border-radius: 50px 5px 50px 5px;
+    -webkit-border-radius: 50px 5px 50px 5px;
+    -moz-border-radius-topleft: 50px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 50px;
+    text-decoration: none;
+}
