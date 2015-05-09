@@ -158,3 +158,59 @@ span.scaling_total
 {
 	margin-bottom: 15px;
 }
+
+.panel-body
+{
+	color: gray;
+}
+
+label.label_margin_5
+{
+	margin-top: 5px;
+}
+
+.float_left
+{
+	float: left;
+}
+
+.success_msg
+{
+	display: none;
+}
+
+.setting_div, .desc_div
+{
+	display: none;
+}
+
+.success_save, .success_scaling_save, .success_range_save
+{
+	color: green;
+	display: none;
+}
+
+.error_scaling_save, .error_range_save
+{
+	color: brown;
+	display: none;
+	margin-left: -90px;
+}
+
+textarea.desc
+{
+	color: black;
+}
+
+
+span.grade
+{
+	color: red;
+  	font-family: cursive;
+  	font-weight: bolder;
+  	font-size: 60px;
+  	position: fixed;
+  	top: 25px;
+  	right: 60px;
+  	display: none;
+}
